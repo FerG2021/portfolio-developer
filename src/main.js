@@ -33,6 +33,18 @@ import Timeline from "primevue/timeline";
 // Button
 import Button from "primevue/button";
 
+// modal confirmacion
+import ConfirmDialog from "primevue/confirmdialog";
+import ConfirmationService from "primevue/confirmationservice";
+
+// modal dinamico
+import DynamicDialog from "primevue/dynamicdialog";
+import DialogService from "primevue/dialogservice";
+
+// modal
+import Dialog from "primevue/dialog";
+
+
 // vuex
 import { createStore } from "vuex";
 
@@ -57,6 +69,9 @@ createApp(App)
   .component("Carousel", Carousel)
   .component("Timeline", Timeline)
   .component("Button", Button)
+  .component("ConfirmDialog", ConfirmDialog)
+  .component("DynamicDialog", DynamicDialog)
+  .component("Dialog", Dialog)
   .use(PrimeVue)
   .use(store)
   .mount("#app");

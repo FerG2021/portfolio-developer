@@ -4,7 +4,7 @@
       <div
         class="contenedor-nombre-desktop animate__animated animate__fadeInLeft"
       >
-        <span class="nombre">FERNANDO </span>
+        <span class="nombre">FERNANDO</span>
         <span class="apellido">GONZALEZ</span>
       </div>
 
@@ -342,7 +342,15 @@
       </div>
     </div>
 
-    <div class="contenedor-projects" id="contenedor-projects">
+    <!--  -->
+    <!-- PROYECTOS -->
+    <!--  -->
+
+    <div
+      class="contenedor-projects"
+      id="contenedor-projects"
+      v-if="$store.state.idioma.code == 'ES'"
+    >
       <div class="contenedor-items-projects">
         <div class="contenedor-items" @click="abrirNutrimarg()">
           <div class="titulo-items-projects">
@@ -444,7 +452,8 @@
       </div>
 
       <div class="contenedor-items-projects-mobile">
-        <div class="contenedor-items" @click="abrirNutrimarg()">
+        <!-- @click="abrirNutrimarg()" -->
+        <div class="contenedor-items" @click="$refs.modalNutrimarg.abrir()">
           <div class="titulo-items-projects">
             <h3 class="titulo-projects">Nutrimarg balanceados</h3>
           </div>
@@ -468,7 +477,7 @@
           </div>
         </div>
 
-        <div class="contenedor-items" @click="abrirLalaDeco()">
+        <div class="contenedor-items" @click="$refs.modalLalaDecoKids.abrir()">
           <div class="titulo-items-projects">
             <h3 class="titulo-projects">Lala Deco Kids</h3>
           </div>
@@ -496,7 +505,7 @@
       </div>
 
       <div class="contenedor-items-projects-mobile">
-        <div class="contenedor-items" @click="abrirModular()">
+        <div class="contenedor-items" @click="$refs.modalModular.abrir()">
           <div class="titulo-items-projects">
             <h3 class="titulo-projects">ModulAr SRL</h3>
           </div>
@@ -521,7 +530,7 @@
           </div>
         </div>
 
-        <div class="contenedor-items" @click="abrirRestaurantApp()">
+        <div class="contenedor-items" @click="$refs.ModalRestaurantApp.abrir()">
           <div class="titulo-items-projects">
             <h3 class="titulo-projects">RestaurantApp</h3>
           </div>
@@ -548,6 +557,227 @@
       <div class="contenedor-time-line">
         <Timeline
           :value="events"
+          layout="horizontal"
+          align="alternate"
+          class="time-line"
+        >
+          <template #opposite> &nbsp; </template>
+          <template #content="slotProps">
+            <span class="anio">{{ slotProps.item.anio }}</span> <br />
+            <span class="descripcion">{{ slotProps.item.descripcion }}</span>
+            <br />
+            <span class="descripcion-mobile">{{ slotProps.item.tipo }}</span>
+            <br />
+          </template>
+        </Timeline>
+      </div>
+    </div>
+
+    <div
+      class="contenedor-projects"
+      id="contenedor-projects"
+      v-if="$store.state.idioma.code == 'IN'"
+    >
+      <div class="contenedor-items-projects">
+        <div class="contenedor-items" @click="abrirNutrimarg()">
+          <div class="titulo-items-projects">
+            <h3 class="titulo-projects">Nutrimarg balanceados</h3>
+          </div>
+          <div class="img-items-projects">
+            <img src="nutrimarg.jpg" alt="" class="img-projects" />
+          </div>
+          <div class="descripcion-items-projects">
+            <div class="descripcion-principal">
+              Laravel - Blade - MySQL (2020 - 2021)
+            </div>
+            <div class="descripcion-secundaria">
+              Balanced Nutrimarg is a firm dedicated to the sale of fodder
+              items, farm and garden products. He software development was
+              requested because there was no with one to keep accounts, sales,
+              stock of products with the difficulty that they can be sold
+              partitioned, in full bags or for a certain amount of money; and
+              statement of current customer accounts, allows you to download
+              proof of purchase and current account
+            </div>
+          </div>
+        </div>
+
+        <div class="contenedor-items" @click="abrirLalaDeco()">
+          <div class="titulo-items-projects">
+            <h3 class="titulo-projects">Lala Deco Kids</h3>
+          </div>
+          <div class="img-items-projects">
+            <img src="laladecokids.jpg" alt="" class="img-projects" />
+          </div>
+          <div class="descripcion-items-projects">
+            <div class="descripcion-principal">
+              Vue.js - Laravel - MySQL (2021 - 2022)
+            </div>
+            <div class="descripcion-secundaria">
+              Company dedicated to the sale of early childhood items. He
+              software development was requested because there was no with one
+              to keep accounting, sales, stock of products and status of current
+              customer accounts, in addition to performing the sending proof of
+              purchase and current account by WhatsApp, mail or direct download
+              to be able to use the least amount paper as possible and bring
+              customers ever closer to the technology <br />
+
+              <b>User: angheredia // Password: 1234</b>
+            </div>
+          </div>
+        </div>
+
+        <div class="contenedor-items" @click="abrirModular()">
+          <div class="titulo-items-projects">
+            <h3 class="titulo-projects">ModulAr SRL</h3>
+          </div>
+          <div class="img-items-projects">
+            <img src="modular.jpg" alt="" class="img-projects" />
+          </div>
+          <div class="descripcion-items-projects">
+            <div class="descripcion-principal">
+              Vue.js - Laravel - MySQL (2022)
+            </div>
+            <div class="descripcion-secundaria">
+              Company that offers construction services architecture and
+              engineering. The development was made to solve the problem of
+              budgeting, comparative and decision making regarding the materials
+              that are required to be purchased as pre-construction process. The
+              request is sent by mail budgeting of products to suppliers giving
+              them access to the system so that they are the ones who charge the
+              prices
+              <br />
+              <b>User: superadmin1@gmail.com // Password: 1234</b>
+            </div>
+          </div>
+        </div>
+
+        <div class="contenedor-items" @click="abrirRestaurantApp()">
+          <div class="titulo-items-projects">
+            <h3 class="titulo-projects">RestaurantApp</h3>
+          </div>
+          <div class="img-items-projects">
+            <img src="restaurantapp.png" alt="" class="img-projects" />
+          </div>
+          <div class="descripcion-items-projects">
+            <div class="descripcion-principal">
+              Vue.js - Laravel - MySQL (2023)
+            </div>
+            <div class="descripcion-secundaria">
+              System that allows customers to view the local menu just by
+              scanning a QR. It consists of a landing page for the customers and
+              a panel for the user where you can add, modify, delete or hide
+              categories, subcategories or products
+              <br />
+              <b>User: ferg@gmail.com // Password: 40899041</b>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contenedor-items-projects-mobile">
+        <!-- @click="abrirNutrimarg()" -->
+        <div class="contenedor-items" @click="$refs.modalNutrimarg.abrir()">
+          <div class="titulo-items-projects">
+            <h3 class="titulo-projects">Nutrimarg balanceados</h3>
+          </div>
+          <div class="img-items-projects">
+            <img src="nutrimarg.jpg" alt="" class="img-projects" />
+          </div>
+          <div class="descripcion-items-projects">
+            <div class="descripcion-principal">
+              Laravel - Blade - MySQL (2020 - 2021)
+            </div>
+            <div class="descripcion-secundaria">
+              Balanced Nutrimarg is a firm dedicated to the sale of fodder
+              items, farm and garden products. He software development was
+              requested because there was no with one to keep accounts, sales,
+              stock of products with the difficulty that they can be sold
+              partitioned, in full bags or for a certain amount of money; and
+              statement of current customer accounts, allows you to download
+              proof of purchase and current account
+            </div>
+          </div>
+        </div>
+
+        <div class="contenedor-items" @click="$refs.modalLalaDecoKids.abrir()">
+          <div class="titulo-items-projects">
+            <h3 class="titulo-projects">Lala Deco Kids</h3>
+          </div>
+          <div class="img-items-projects">
+            <img src="laladecokids.jpg" alt="" class="img-projects" />
+          </div>
+          <div class="descripcion-items-projects">
+            <div class="descripcion-principal">
+              Vue.js - Laravel - MySQL (2021 - 2022)
+            </div>
+            <div class="descripcion-secundaria">
+              Company dedicated to the sale of early childhood items. He
+              software development was requested because there was no with one
+              to keep accounting, sales, stock of products and status of current
+              customer accounts, in addition to performing the sending proof of
+              purchase and current account by WhatsApp, mail or direct download
+              to be able to use the least amount paper as possible and bring
+              customers ever closer to the technology <br />
+
+              <b>User: angheredia // Password: 1234</b>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contenedor-items-projects-mobile">
+        <div class="contenedor-items" @click="$refs.modalModular.abrir()">
+          <div class="titulo-items-projects">
+            <h3 class="titulo-projects">ModulAr SRL</h3>
+          </div>
+          <div class="img-items-projects">
+            <img src="modular.jpg" alt="" class="img-projects" />
+          </div>
+          <div class="descripcion-items-projects">
+            <div class="descripcion-principal">
+              Vue.js - Laravel - MySQL (2022)
+            </div>
+            <div class="descripcion-secundaria">
+              Company that offers construction services architecture and
+              engineering. The development was made to solve the problem of
+              budgeting, comparative and decision making regarding the materials
+              that are required to be purchased as pre-construction process. The
+              request is sent by mail budgeting of products to suppliers giving
+              them access to the system so that they are the ones who charge the
+              prices
+              <br />
+              <b>User: superadmin1@gmail.com // Password: 1234</b>
+            </div>
+          </div>
+        </div>
+
+        <div class="contenedor-items" @click="$refs.ModalRestaurantApp.abrir()">
+          <div class="titulo-items-projects">
+            <h3 class="titulo-projects">RestaurantApp</h3>
+          </div>
+          <div class="img-items-projects">
+            <img src="restaurantapp.png" alt="" class="img-projects" />
+          </div>
+          <div class="descripcion-items-projects">
+            <div class="descripcion-principal">
+              Vue.js - Laravel - MySQL (2023)
+            </div>
+            <div class="descripcion-secundaria">
+              System that allows customers to view the local menu just by
+              scanning a QR. It consists of a landing page for the customers and
+              a panel for the user where you can add, modify, delete or hide
+              categories, subcategories or products
+              <br />
+              <b>User: ferg@gmail.com // Password: 40899041</b>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contenedor-time-line">
+        <Timeline
+          :value="eventsEng"
           layout="horizontal"
           align="alternate"
           class="time-line"
@@ -617,10 +847,30 @@
       </div>
     </div>
   </div>
+
+  <modal-nutrimarg ref="modalNutrimarg"></modal-nutrimarg>
+
+  <modal-lala-deco-kids ref="modalLalaDecoKids"></modal-lala-deco-kids>
+
+  <modal-modular ref="modalModular"></modal-modular>
+
+  <modal-restaurant-app ref="ModalRestaurantApp"></modal-restaurant-app>
 </template>
 
 <script>
+import ModalNutrimarg from "./modales/nutrimarg.vue";
+import ModalLalaDecoKids from "./modales/laladecokids.vue";
+import ModalModular from "./modales/modular.vue";
+import ModalRestaurantApp from "./modales/restaurantapp.vue";
+
 export default {
+  components: {
+    ModalNutrimarg,
+    ModalLalaDecoKids,
+    ModalModular,
+    ModalRestaurantApp,
+  },
+
   created() {},
 
   data() {
@@ -702,6 +952,29 @@ export default {
         {
           anio: 2022,
           tipo: "Empresa de desarrollo de software",
+          descripcion: "Macamedia",
+        },
+      ],
+
+      eventsEng: [
+        {
+          anio: 2020,
+          tipo: "Freelance project",
+          descripcion: "Nutrimarg Balanceados",
+        },
+        {
+          anio: 2021,
+          tipo: "Freelance project",
+          descripcion: "Lala Deco Kids",
+        },
+        {
+          anio: 2022,
+          tipo: "Freelance project",
+          descripcion: "Lala Deco Kids",
+        },
+        {
+          anio: 2022,
+          tipo: "Software development company",
           descripcion: "Macamedia",
         },
       ],
@@ -800,6 +1073,7 @@ export default {
   --principal-color: #01121c;
   --secondary-color: #002431;
   --third-color: #fe810e;
+  --white-secondary: #959595;
 }
 
 /*  */
@@ -1420,6 +1694,7 @@ export default {
     margin-top: 20;
     /* border: 1px solid green; */
     width: 100%;
+    padding: 5px;
   }
 
   .descripcion-about-me {
@@ -1474,7 +1749,7 @@ export default {
   }
 
   .contenedor-skills {
-    margin-top: 2vh;
+    margin-top: 1vh;
     /* border: 1px solid red; */
     display: flex;
     margin-right: 4vw;
@@ -1496,10 +1771,10 @@ export default {
     transition: transform 0.2s; /* Animation */
   }
 
-  .img-skill:hover {
+  /* .img-skill:hover {
     transform: scale(1.3);
     cursor: pointer;
-  }
+  } */
 
   /*  */
   /* PROJECTS */
@@ -1551,8 +1826,8 @@ export default {
   }
 
   .contenedor-items:hover {
-    transform: scale(1.02);
     cursor: pointer;
+    margin: auto;
   }
 
   .titulo-items-projects {
