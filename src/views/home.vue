@@ -1672,6 +1672,7 @@ export default {
     border: 1px solid var(--third-color) !important;
     color: var(--principal-color);
     border-radius: 3px;
+    cursor: pointer;
   }
 
   .modular {
