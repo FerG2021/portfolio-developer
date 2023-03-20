@@ -10,7 +10,7 @@
       :draggable="false"
       header="Lala Deco Kids"
     >
-      <img src="laladecokids.jpg" alt="" srcset="" class="img" />
+      <img src="/laladecokids.jpg" alt="" srcset="" class="img" />
 
       <p class="descripcion-principal">
         Laravel - Blade - MySQL <br />

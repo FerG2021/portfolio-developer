@@ -10,7 +10,7 @@
       :draggable="false"
       header="ModulAr SRL"
     >
-      <img src="modular.jpg" alt="" srcset="" class="img" />
+      <img src="/modular.jpg" alt="" srcset="" class="img" />
 
       <p class="descripcion-principal">
         Vue.js - Laravel - MySQL <br />

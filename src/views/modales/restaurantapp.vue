@@ -10,7 +10,7 @@
       :draggable="false"
       header="RestaurantApp"
     >
-      <img src="restaurantapp.png" alt="" srcset="" class="img" />
+      <img src="/restaurantapp.png" alt="" srcset="" class="img" />
 
       <p class="descripcion-principal">
         Vue.js - Laravel - MySQL <br />

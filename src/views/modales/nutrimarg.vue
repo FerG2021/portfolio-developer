@@ -10,7 +10,7 @@
       :draggable="false"
       header="Nutrimarg Balanceados"
     >
-      <img src="nutrimarg.jpg" alt="" srcset="" class="img" />
+      <img src="/nutrimarg.jpg" alt="" srcset="" class="img" />
 
       <p class="descripcion-principal">
         Vue.js - Laravel - MySQL <br />

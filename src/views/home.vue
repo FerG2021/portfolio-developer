@@ -155,7 +155,7 @@
       <h1 class="saludo">Full Stack Developer</h1>
 
       <div class="contenedor-img">
-        <img src="developer.png" alt="" srcset="" class="img" />
+        <img src="/developer.png" alt="" srcset="" class="img" />
       </div>
     </div>
 
@@ -171,7 +171,7 @@
       <h1 class="saludo">Full Stack Developer</h1>
 
       <div class="contenedor-img">
-        <img src="developer.png" alt="" srcset="" class="img" />
+        <img src="/developer.png" alt="" srcset="" class="img" />
       </div>
     </div>
 
@@ -184,7 +184,7 @@
       v-if="$store.state.idioma.code == 'ES'"
     >
       <div class="contenedor-img-about-me">
-        <img src="developer2.png" alt="" srcset="" class="img-2" />
+        <img src="/developer2.png" alt="" srcset="" class="img-2" />
       </div>
 
       <div class="contenedor-descripcion-about-me">
@@ -235,28 +235,28 @@
 
         <div class="contenedor-skills">
           <div class="skill">
-            <img src="html.png" alt="" srcset="" class="img-skill" />
+            <img src="/html.png" alt="" srcset="" class="img-skill" />
           </div>
           <div class="skill">
-            <img src="css.png" alt="" srcset="" class="img-skill" />
+            <img src="/css.png" alt="" srcset="" class="img-skill" />
           </div>
           <div class="skill">
-            <img src="js.png" alt="" srcset="" class="img-skill" />
+            <img src="/js.png" alt="" srcset="" class="img-skill" />
           </div>
           <div class="skill">
-            <img src="vue.png" alt="" srcset="" class="img-skill" />
+            <img src="/vue.png" alt="" srcset="" class="img-skill" />
           </div>
         </div>
 
         <div class="contenedor-skills">
           <div class="skill">
-            <img src="php.png" alt="" srcset="" class="img-skill" />
+            <img src="/php.png" alt="" srcset="" class="img-skill" />
           </div>
           <div class="skill">
-            <img src="laravel.png" alt="" srcset="" class="img-skill" />
+            <img src="/laravel.png" alt="" srcset="" class="img-skill" />
           </div>
           <div class="skill">
-            <img src="mysql.png" alt="" srcset="" class="img-skill" />
+            <img src="/mysql.png" alt="" srcset="" class="img-skill" />
           </div>
         </div>
       </div>
@@ -268,7 +268,7 @@
       v-if="$store.state.idioma.code == 'IN'"
     >
       <div class="contenedor-img-about-me">
-        <img src="developer2.png" alt="" srcset="" class="img-2" />
+        <img src="/developer2.png" alt="" srcset="" class="img-2" />
       </div>
 
       <div class="contenedor-descripcion-about-me">
@@ -315,28 +315,28 @@
 
         <div class="contenedor-skills">
           <div class="skill">
-            <img src="html.png" alt="" srcset="" class="img-skill" />
+            <img src="/html.png" alt="" srcset="" class="img-skill" />
           </div>
           <div class="skill">
-            <img src="css.png" alt="" srcset="" class="img-skill" />
+            <img src="/css.png" alt="" srcset="" class="img-skill" />
           </div>
           <div class="skill">
-            <img src="js.png" alt="" srcset="" class="img-skill" />
+            <img src="/js.png" alt="" srcset="" class="img-skill" />
           </div>
           <div class="skill">
-            <img src="vue.png" alt="" srcset="" class="img-skill" />
+            <img src="/vue.png" alt="" srcset="" class="img-skill" />
           </div>
         </div>
 
         <div class="contenedor-skills">
           <div class="skill">
-            <img src="php.png" alt="" srcset="" class="img-skill" />
+            <img src="/php.png" alt="" srcset="" class="img-skill" />
           </div>
           <div class="skill">
-            <img src="laravel.png" alt="" srcset="" class="img-skill" />
+            <img src="/laravel.png" alt="" srcset="" class="img-skill" />
           </div>
           <div class="skill">
-            <img src="mysql.png" alt="" srcset="" class="img-skill" />
+            <img src="/mysql.png" alt="" srcset="" class="img-skill" />
           </div>
         </div>
       </div>
@@ -357,7 +357,7 @@
             <h3 class="titulo-projects">Nutrimarg balanceados</h3>
           </div>
           <div class="img-items-projects">
-            <img src="nutrimarg.jpg" alt="" class="img-projects" />
+            <img src="/nutrimarg.jpg" alt="" class="img-projects" />
           </div>
           <div class="descripcion-items-projects">
             <div class="descripcion-principal">
@@ -381,7 +381,7 @@
             <h3 class="titulo-projects">Lala Deco Kids</h3>
           </div>
           <div class="img-items-projects">
-            <img src="laladecokids.jpg" alt="" class="img-projects" />
+            <img src="/laladecokids.jpg" alt="" class="img-projects" />
           </div>
           <div class="descripcion-items-projects">
             <div class="descripcion-principal">
@@ -407,7 +407,7 @@
             <h3 class="titulo-projects">ModulAr SRL</h3>
           </div>
           <div class="img-items-projects">
-            <img src="modular.jpg" alt="" class="img-projects" />
+            <img src="/modular.jpg" alt="" class="img-projects" />
           </div>
           <div class="descripcion-items-projects">
             <div class="descripcion-principal">
@@ -432,7 +432,7 @@
             <h3 class="titulo-projects">RestaurantApp</h3>
           </div>
           <div class="img-items-projects">
-            <img src="restaurantapp.png" alt="" class="img-projects" />
+            <img src="/restaurantapp.png" alt="" class="img-projects" />
           </div>
           <div class="descripcion-items-projects">
             <div class="descripcion-principal">
@@ -455,7 +455,7 @@
         <!-- Nutrimarg balanceados -->
         <div class="contenedor-hover-project nutrimarg">
           <div class="contenedor-imagen-hover">
-            <img src="nutrimarg.jpg" alt="" srcset="" class="imagen-hover" />
+            <img src="/nutrimarg.jpg" alt="" srcset="" class="imagen-hover" />
             <div
               class="contenedor-descripcion-hover animate__animated animate__fadeIn"
             >
@@ -479,7 +479,12 @@
         <!-- Lala Deco Kids -->
         <div class="contenedor-hover-project laladeco">
           <div class="contenedor-imagen-hover">
-            <img src="laladecokids.jpg" alt="" srcset="" class="imagen-hover" />
+            <img
+              src="/laladecokids.jpg"
+              alt=""
+              srcset=""
+              class="imagen-hover"
+            />
             <div
               class="contenedor-descripcion-hover animate__animated animate__fadeIn"
             >
@@ -506,7 +511,7 @@
         <!-- Modular -->
         <div class="contenedor-hover-project modular">
           <div class="contenedor-imagen-hover">
-            <img src="modular.jpg" alt="" srcset="" class="imagen-hover" />
+            <img src="/modular.jpg" alt="" srcset="" class="imagen-hover" />
             <div
               class="contenedor-descripcion-hover animate__animated animate__fadeIn"
             >
@@ -534,7 +539,7 @@
         <div class="contenedor-hover-project restaurantapp">
           <div class="contenedor-imagen-hover">
             <img
-              src="restaurantapp.png"
+              src="/restaurantapp.png"
               alt=""
               srcset=""
               class="imagen-hover"
@@ -574,7 +579,7 @@
             <h3 class="titulo-projects">Nutrimarg balanceados</h3>
           </div>
           <div class="img-items-projects">
-            <img src="nutrimarg.jpg" alt="" class="img-projects" />
+            <img src="/nutrimarg.jpg" alt="" class="img-projects" />
           </div>
           <div class="descripcion-items-projects">
             <div class="descripcion-principal">
@@ -598,7 +603,7 @@
             <h3 class="titulo-projects">Lala Deco Kids</h3>
           </div>
           <div class="img-items-projects">
-            <img src="laladecokids.jpg" alt="" class="img-projects" />
+            <img src="/laladecokids.jpg" alt="" class="img-projects" />
           </div>
           <div class="descripcion-items-projects">
             <div class="descripcion-principal">
@@ -626,7 +631,7 @@
             <h3 class="titulo-projects">ModulAr SRL</h3>
           </div>
           <div class="img-items-projects">
-            <img src="modular.jpg" alt="" class="img-projects" />
+            <img src="/modular.jpg" alt="" class="img-projects" />
           </div>
           <div class="descripcion-items-projects">
             <div class="descripcion-principal">
@@ -651,7 +656,7 @@
             <h3 class="titulo-projects">RestaurantApp</h3>
           </div>
           <div class="img-items-projects">
-            <img src="restaurantapp.png" alt="" class="img-projects" />
+            <img src="/restaurantapp.png" alt="" class="img-projects" />
           </div>
           <div class="descripcion-items-projects">
             <div class="descripcion-principal">
@@ -698,7 +703,7 @@
         <!-- Nutrimarg balanceados -->
         <div class="contenedor-hover-project nutrimarg">
           <div class="contenedor-imagen-hover">
-            <img src="nutrimarg.jpg" alt="" srcset="" class="imagen-hover" />
+            <img src="/nutrimarg.jpg" alt="" srcset="" class="imagen-hover" />
             <div
               class="contenedor-descripcion-hover animate__animated animate__fadeIn"
             >
@@ -722,7 +727,12 @@
         <!-- Lala Deco Kids -->
         <div class="contenedor-hover-project laladeco">
           <div class="contenedor-imagen-hover">
-            <img src="laladecokids.jpg" alt="" srcset="" class="imagen-hover" />
+            <img
+              src="/laladecokids.jpg"
+              alt=""
+              srcset=""
+              class="imagen-hover"
+            />
             <div
               class="contenedor-descripcion-hover animate__animated animate__fadeIn"
             >
@@ -748,7 +758,7 @@
         <!-- Modular -->
         <div class="contenedor-hover-project modular">
           <div class="contenedor-imagen-hover">
-            <img src="modular.jpg" alt="" srcset="" class="imagen-hover" />
+            <img src="/modular.jpg" alt="" srcset="" class="imagen-hover" />
             <div
               class="contenedor-descripcion-hover animate__animated animate__fadeIn"
             >
@@ -775,7 +785,7 @@
         <div class="contenedor-hover-project restaurantapp">
           <div class="contenedor-imagen-hover">
             <img
-              src="restaurantapp.png"
+              src="/restaurantapp.png"
               alt=""
               srcset=""
               class="imagen-hover"
@@ -813,7 +823,7 @@
             <h3 class="titulo-projects">Nutrimarg balanceados</h3>
           </div>
           <div class="img-items-projects">
-            <img src="nutrimarg.jpg" alt="" class="img-projects" />
+            <img src="/nutrimarg.jpg" alt="" class="img-projects" />
           </div>
           <div class="descripcion-items-projects">
             <div class="descripcion-principal">
@@ -836,7 +846,7 @@
             <h3 class="titulo-projects">Lala Deco Kids</h3>
           </div>
           <div class="img-items-projects">
-            <img src="laladecokids.jpg" alt="" class="img-projects" />
+            <img src="/laladecokids.jpg" alt="" class="img-projects" />
           </div>
           <div class="descripcion-items-projects">
             <div class="descripcion-principal">
@@ -861,7 +871,7 @@
             <h3 class="titulo-projects">ModulAr SRL</h3>
           </div>
           <div class="img-items-projects">
-            <img src="modular.jpg" alt="" class="img-projects" />
+            <img src="/modular.jpg" alt="" class="img-projects" />
           </div>
           <div class="descripcion-items-projects">
             <div class="descripcion-principal">
@@ -886,7 +896,7 @@
             <h3 class="titulo-projects">RestaurantApp</h3>
           </div>
           <div class="img-items-projects">
-            <img src="restaurantapp.png" alt="" class="img-projects" />
+            <img src="/restaurantapp.png" alt="" class="img-projects" />
           </div>
           <div class="descripcion-items-projects">
             <div class="descripcion-principal">
@@ -911,7 +921,7 @@
             <h3 class="titulo-projects">Nutrimarg balanceados</h3>
           </div>
           <div class="img-items-projects">
-            <img src="nutrimarg.jpg" alt="" class="img-projects" />
+            <img src="/nutrimarg.jpg" alt="" class="img-projects" />
           </div>
           <div class="descripcion-items-projects">
             <div class="descripcion-principal">
@@ -934,7 +944,7 @@
             <h3 class="titulo-projects">Lala Deco Kids</h3>
           </div>
           <div class="img-items-projects">
-            <img src="laladecokids.jpg" alt="" class="img-projects" />
+            <img src="/laladecokids.jpg" alt="" class="img-projects" />
           </div>
           <div class="descripcion-items-projects">
             <div class="descripcion-principal">
@@ -961,7 +971,7 @@
             <h3 class="titulo-projects">ModulAr SRL</h3>
           </div>
           <div class="img-items-projects">
-            <img src="modular.jpg" alt="" class="img-projects" />
+            <img src="/modular.jpg" alt="" class="img-projects" />
           </div>
           <div class="descripcion-items-projects">
             <div class="descripcion-principal">
@@ -986,7 +996,7 @@
             <h3 class="titulo-projects">RestaurantApp</h3>
           </div>
           <div class="img-items-projects">
-            <img src="restaurantapp.png" alt="" class="img-projects" />
+            <img src="/restaurantapp.png" alt="" class="img-projects" />
           </div>
           <div class="descripcion-items-projects">
             <div class="descripcion-principal">
@@ -1072,7 +1082,7 @@
         </div>
       </div>
       <div class="contenedor-img-contact">
-        <img src="developer3.png" alt="" class="img-contact" />
+        <img src="/developer3.png" alt="" class="img-contact" />
       </div>
     </div>
   </div>
