@@ -351,7 +351,7 @@
       id="contenedor-projects"
       v-if="$store.state.idioma.code == 'ES'"
     >
-      <div class="contenedor-items-projects">
+      <!-- <div class="contenedor-items-projects">
         <div class="contenedor-items" @click="abrirNutrimarg()">
           <div class="titulo-items-projects">
             <h3 class="titulo-projects">Nutrimarg balanceados</h3>
@@ -448,6 +448,24 @@
               <b>User: ferg@gmail.com // Password: 40899041</b>
             </div>
           </div>
+        </div>
+      </div> -->
+
+      <div class="contenedor-hover-projects">
+        <div class="contenedor-hover-project nutrimarg">
+          <div class="titulo">Nutrimarg Balanceados</div>
+        </div>
+        <div class="contenedor-hover-project laladeco">
+          <div class="titulo">Lala Deco Kids</div>
+          <div class="contenedor-imagen-hover">
+            <img src="laladecokids.jpg" alt="" srcset="" class="imagen-hover" />
+          </div>
+        </div>
+        <div class="contenedor-hover-project modular">
+          <div class="titulo">ModulAr</div>
+        </div>
+        <div class="contenedor-hover-project restaurantapp">
+          <div class="titulo">RestaurantApp</div>
         </div>
       </div>
 
@@ -1338,6 +1356,100 @@ export default {
 
   .contenedor-items-projects-mobile {
     display: none;
+  }
+
+  .contenedor-hover-projects {
+    width: 100%;
+    height: 40vh;
+    border: 1px solid red;
+    display: flex;
+  }
+
+  .contenedor-hover-project {
+    width: 25%;
+    height: 40vh;
+    border: 1px solid yellow;
+    transition: width 0.5s;
+    align-items: center;
+  }
+
+  .nutrimarg {
+    background: rgb(146, 51, 49);
+    background: linear-gradient(
+      180deg,
+      rgba(146, 51, 49, 1) 0%,
+      rgba(102, 35, 34, 1) 100%
+    );
+  }
+
+  .laladeco {
+    background: rgb(229, 199, 0);
+    background: linear-gradient(
+      0deg,
+      rgba(229, 199, 0, 1) 0%,
+      rgba(255, 222, 0, 1) 100%
+    );
+  }
+
+  .titulo {
+    height: 4vh;
+    border: 1px solid green;
+  }
+
+  .contenedor-imagen-hover {
+    display: flex;
+    align-items: center;
+    border: 1px solid red;
+    height: 40vh;
+  }
+
+  .imagen-hover {
+    margin: auto;
+    height: 30vh;
+    width: 20vw;
+    transition: margin 0.5s;
+  }
+
+  .modular {
+    background: rgb(60, 56, 111);
+    background: linear-gradient(
+      180deg,
+      rgba(60, 56, 111, 1) 0%,
+      rgba(39, 35, 96, 1) 100%
+    );
+  }
+
+  .restaurantapp {
+    background: rgb(40, 49, 52);
+    background: linear-gradient(
+      180deg,
+      rgba(40, 49, 52, 1) 0%,
+      rgba(17, 27, 30, 1) 100%
+    );
+  }
+
+  .contenedor-hover-project:hover {
+    width: 70%;
+  }
+
+  .contenedor-hover-project:hover .titulo {
+    font-size: 20px;
+  }
+
+  .contenedor-hover-project:not(:hover) .titulo {
+    display: none;
+  }
+
+  .contenedor-hover-project:hover .contenedor-imagen-hover {
+    height: calc(40vh - 4vh);
+  }
+
+  .contenedor-hover-project:hover .imagen-hover {
+    margin-left: 4vh;
+  }
+
+  .contenedor-hover-project:not(:hover) .imagen-hover {
+    width: 80%;
   }
 
   .contenedor-items {
