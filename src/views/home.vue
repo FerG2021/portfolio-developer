@@ -452,20 +452,118 @@
       </div> -->
 
       <div class="contenedor-hover-projects">
+        <!-- Nutrimarg balanceados -->
         <div class="contenedor-hover-project nutrimarg">
-          <div class="titulo">Nutrimarg Balanceados</div>
-        </div>
-        <div class="contenedor-hover-project laladeco">
-          <div class="titulo">Lala Deco Kids</div>
           <div class="contenedor-imagen-hover">
-            <img src="laladecokids.jpg" alt="" srcset="" class="imagen-hover" />
+            <img src="nutrimarg.jpg" alt="" srcset="" class="imagen-hover" />
+            <div
+              class="contenedor-descripcion-hover animate__animated animate__fadeIn"
+            >
+              <div class="titulo-hover">Nutrimarg Balanceados</div>
+              <div class="descripcion-hover">
+                Laravel - Blade - MySQL (2020 - 2021) <br />
+                Firma dedicada a la venta de artículos de forrajería, productos
+                agrícolas y de jardín. Fue solicitado debido a que no se contaba
+                con uno para llevar la contabilidad, ventas, stock de productos
+                vendidos de forma particionada, en bolsas completas o por cierta
+                monto de dinero; y estado de las cuentas corrientes de clientes,
+                permite descargar comprobantes de compra y cuenta corriente
+
+                <div style="display: flex; margin-top: 1vh">
+                  <p class="btn-acceder" @click="abrirNutrimarg()">Acceder</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="contenedor-hover-project modular">
-          <div class="titulo">ModulAr</div>
+        <!-- Lala Deco Kids -->
+        <div class="contenedor-hover-project laladeco">
+          <div class="contenedor-imagen-hover">
+            <img src="laladecokids.jpg" alt="" srcset="" class="imagen-hover" />
+            <div
+              class="contenedor-descripcion-hover animate__animated animate__fadeIn"
+            >
+              <div class="titulo-hover">Lala Deco Kids</div>
+              <div class="descripcion-hover">
+                Vue.js - Laravel - MySQL (2021 - 2022) <br />
+                Empresa dedicada a la venta de artículos de primera infancia.
+                Fue solicitado debido a que no se contaba con uno para llevar la
+                contabilidad, ventas, stock de productos y estado de las cuentas
+                corrientes de clientes. Realizar el envío de comprobantes de
+                compra y cuenta corriente por WhatsApp, mail o descarga directa
+                <br />
+
+                <b>User: angheredia // Password: 1234</b>
+
+                <div style="display: flex; margin-top: 1vh">
+                  <p class="btn-acceder" @click="abrirLalaDeco()">Acceder</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- Modular -->
+        <div class="contenedor-hover-project modular">
+          <div class="contenedor-imagen-hover">
+            <img src="modular.jpg" alt="" srcset="" class="imagen-hover" />
+            <div
+              class="contenedor-descripcion-hover animate__animated animate__fadeIn"
+            >
+              <div class="titulo-hover">ModulAr</div>
+              <div class="descripcion-hover">
+                Vue.js - Laravel - MySQL (2022) <br />
+                Empresa constructora. El desarrollo se realizó para solucionar
+                la problemática de presupuestación, comparativa y toma de
+                decisiones con respecto a los materiales que se requieren
+                comprar como proceso previo a la construcción. Se envía por mail
+                el pedido de presupuestación a los proveedores dándole accedo al
+                sistema carguen los precios
+                <br />
+                <b>User: superadmin1@gmail.com // Password: 1234</b>
+
+                <div style="display: flex; margin-top: 1vh">
+                  <p class="btn-acceder" @click="abrirModular()">Acceder</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Restaurantapp -->
         <div class="contenedor-hover-project restaurantapp">
-          <div class="titulo">RestaurantApp</div>
+          <div class="contenedor-imagen-hover">
+            <img
+              src="restaurantapp.png"
+              alt=""
+              srcset=""
+              class="imagen-hover"
+            />
+            <div
+              class="contenedor-descripcion-hover animate__animated animate__fadeIn"
+            >
+              <div class="titulo-hover">RestaurantApp</div>
+              <div class="descripcion-hover">
+                Vue.js - Laravel - MySQL (2023) <br />
+                Sistema que permite a los clientes visualizar la carta del local
+                con sólo escanear un QR. Consta de una landing page para los
+                clientes y un panel para el usuario donde puede agregar,
+                modificar, eliminar u ocultar categorías, subcategorías o
+                productos
+                <br />
+                <b>User: ferg@gmail.com // Password: 40899041</b>
+
+                <div style="display: flex; margin-top: 1vh">
+                  <p class="btn-acceder" @click="abrirRestaurantAppPanel()">
+                    Acceder Panel
+                  </p>
+                  <p class="btn-acceder" @click="abrirRestaurantApp()">
+                    Acceder Landing
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -596,7 +694,120 @@
       id="contenedor-projects"
       v-if="$store.state.idioma.code == 'IN'"
     >
-      <div class="contenedor-items-projects">
+      <div class="contenedor-hover-projects">
+        <!-- Nutrimarg balanceados -->
+        <div class="contenedor-hover-project nutrimarg">
+          <div class="contenedor-imagen-hover">
+            <img src="nutrimarg.jpg" alt="" srcset="" class="imagen-hover" />
+            <div
+              class="contenedor-descripcion-hover animate__animated animate__fadeIn"
+            >
+              <div class="titulo-hover">Nutrimarg Balanceados</div>
+              <div class="descripcion-hover">
+                Laravel - Blade - MySQL (2020 - 2021) <br />
+                Firm dedicated to the sale of fodder items, products farm and
+                garden. It was requested because it was not counted with one to
+                keep accounts, sales, stock of products sold in partitioned
+                form, in complete bags or by certain amount of money; and
+                statement of customer current accounts, Allows you to download
+                proof of purchase and current account
+
+                <div style="display: flex; margin-top: 1vh">
+                  <p class="btn-acceder" @click="abrirNutrimarg()">Access</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Lala Deco Kids -->
+        <div class="contenedor-hover-project laladeco">
+          <div class="contenedor-imagen-hover">
+            <img src="laladecokids.jpg" alt="" srcset="" class="imagen-hover" />
+            <div
+              class="contenedor-descripcion-hover animate__animated animate__fadeIn"
+            >
+              <div class="titulo-hover">Lala Deco Kids</div>
+              <div class="descripcion-hover">
+                Vue.js - Laravel - MySQL (2021 - 2022) <br />
+                Company dedicated to the sale of early childhood items. It was
+                requested because there was no one to carry the accounting,
+                sales, product stock and account status customer streams. Send
+                proof of purchase and current account by WhatsApp, mail or
+                direct download
+                <br />
+
+                <b>User: angheredia // Password: 1234</b>
+
+                <div style="display: flex; margin-top: 1vh">
+                  <p class="btn-acceder" @click="abrirLalaDeco()">Access</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modular -->
+        <div class="contenedor-hover-project modular">
+          <div class="contenedor-imagen-hover">
+            <img src="modular.jpg" alt="" srcset="" class="imagen-hover" />
+            <div
+              class="contenedor-descripcion-hover animate__animated animate__fadeIn"
+            >
+              <div class="titulo-hover">ModulAr</div>
+              <div class="descripcion-hover">
+                Vue.js - Laravel - MySQL (2022) <br />
+                Construction company. The development was made to solve the
+                problem of budgeting, comparative and decision making decisions
+                regarding materials required purchase as a pre-construction
+                process. It is sent by mail the budget request to the suppliers
+                giving access to the system load prices
+                <br />
+                <b>User: superadmin1@gmail.com // Password: 1234</b>
+
+                <div style="display: flex; margin-top: 1vh">
+                  <p class="btn-acceder" @click="abrirModular()">Access</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Restaurantapp -->
+        <div class="contenedor-hover-project restaurantapp">
+          <div class="contenedor-imagen-hover">
+            <img
+              src="restaurantapp.png"
+              alt=""
+              srcset=""
+              class="imagen-hover"
+            />
+            <div
+              class="contenedor-descripcion-hover animate__animated animate__fadeIn"
+            >
+              <div class="titulo-hover">RestaurantApp</div>
+              <div class="descripcion-hover">
+                Vue.js - Laravel - MySQL (2023) <br />
+                System that allows customers to view the local menu just by
+                scanning a QR. It consists of a landing page for the customers
+                and a panel for the user where you can add, modify, delete or
+                hide categories, subcategories or products
+                <br />
+                <b>User: ferg@gmail.com // Password: 40899041</b>
+
+                <div style="display: flex; margin-top: 1vh">
+                  <p class="btn-acceder" @click="abrirRestaurantAppPanel()">
+                    Access Dashboard
+                  </p>
+                  <p class="btn-acceder" @click="abrirRestaurantApp()">
+                    Access Landing
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="contenedor-items-projects">
         <div class="contenedor-items" @click="abrirNutrimarg()">
           <div class="titulo-items-projects">
             <h3 class="titulo-projects">Nutrimarg balanceados</h3>
@@ -691,7 +902,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="contenedor-items-projects-mobile">
         <!-- @click="abrirNutrimarg()" -->
@@ -965,7 +1176,7 @@ export default {
         {
           anio: 2022,
           tipo: "Proyecto freelance",
-          descripcion: "Lala Deco Kids",
+          descripcion: "ModulAr",
         },
         {
           anio: 2022,
@@ -988,7 +1199,7 @@ export default {
         {
           anio: 2022,
           tipo: "Freelance project",
-          descripcion: "Lala Deco Kids",
+          descripcion: "ModulAr",
         },
         {
           anio: 2022,
@@ -1031,6 +1242,12 @@ export default {
 
     async abrirRestaurantApp() {
       let url = "http://landingcarta.balanceado.com.ar";
+
+      window.open(url, "_blank");
+    },
+
+    async abrirRestaurantAppPanel() {
+      let url = "http://panelcarta.balanceado.com.ar";
 
       window.open(url, "_blank");
     },
@@ -1361,14 +1578,14 @@ export default {
   .contenedor-hover-projects {
     width: 100%;
     height: 40vh;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
   }
 
   .contenedor-hover-project {
     width: 25%;
     height: 40vh;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     transition: width 0.5s;
     align-items: center;
   }
@@ -1393,13 +1610,13 @@ export default {
 
   .titulo {
     height: 4vh;
-    border: 1px solid green;
+    /* border: 1px solid green; */
   }
 
   .contenedor-imagen-hover {
     display: flex;
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 40vh;
   }
 
@@ -1408,6 +1625,43 @@ export default {
     height: 30vh;
     width: 20vw;
     transition: margin 0.5s;
+  }
+
+  .nutrimarg:hover .contenedor-imagen-hover .imagen-hover {
+    width: 20vw !important;
+  }
+
+  .modular:hover .contenedor-imagen-hover .imagen-hover {
+    width: 20vw !important;
+  }
+
+  .restaurantapp:hover .contenedor-imagen-hover .imagen-hover {
+    width: 20vw !important;
+  }
+
+  .contenedor-descripcion-hover {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 40vh;
+    padding: 2vh;
+    transition: margin 0.5s;
+  }
+
+  .titulo-hover {
+    text-align: center;
+  }
+
+  .descripcion-hover {
+    font-size: calc(0.4em + 0.4vw);
+  }
+
+  .btn-acceder {
+    margin: auto;
+    padding: 1vh;
+    background-color: var(--third-color) !important;
+    border: 1px solid var(--third-color) !important;
+    color: var(--principal-color);
+    border-radius: 3px;
   }
 
   .modular {
@@ -1440,12 +1694,17 @@ export default {
     display: none;
   }
 
+  .contenedor-hover-project:not(:hover) .contenedor-descripcion-hover {
+    display: none;
+  }
+
   .contenedor-hover-project:hover .contenedor-imagen-hover {
-    height: calc(40vh - 4vh);
+    height: 40vh;
   }
 
   .contenedor-hover-project:hover .imagen-hover {
     margin-left: 4vh;
+    width: 100%;
   }
 
   .contenedor-hover-project:not(:hover) .imagen-hover {
@@ -1922,6 +2181,10 @@ export default {
 
   .contenedor-items-projects-mobile:hover .contenedor-items-projects {
     height: 40vh;
+  }
+
+  .contenedor-hover-projects {
+    display: none;
   }
 
   .contenedor-items {
